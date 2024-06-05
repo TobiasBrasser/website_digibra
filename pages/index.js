@@ -1,7 +1,9 @@
 import React from 'react'
 import Navbar from '../components/Navbar'
 import Styles from "./index.module.css"
+import ListTrain from '../components/ListTrain'
 import Head from 'next/head'
+
 
 
 function IndexPage() {
@@ -14,7 +16,7 @@ function IndexPage() {
         </Head>
 
         <div className={Styles.gallery}>
-            <img className={Styles.image} src="/panda.jpg" />
+            <img className={Styles.image} src="/panda.JPG" />
             <div className={Styles.textBox}>
               <h1 className={Styles.title}>Herzlich Willkommen zu Digibra</h1>
               <div>
@@ -27,6 +29,7 @@ function IndexPage() {
 
         <hr></hr>
         <h1 className={Styles.title}>Modelleisenbahnen</h1>
+        <ListTrain />
     </>
   )
 }

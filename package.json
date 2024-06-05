@@ -1,9 +1,13 @@
 {
+  "homepage": "https://tobiasbrasser.github.io/website_digibra",
   "name": "digibra_react2",
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "dev": "next dev"
+    "dev": "next dev",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
+    "build": "react-scripts build"
   },
   "keywords": [],
   "author": "",
