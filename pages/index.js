@@ -31,7 +31,7 @@ function IndexPage() {
         <h1 className={Styles.title}>Modelleisenbahnen</h1>
         <ListTrain />
     </>
-  )
+  ) /** Test */
 }
 
 export default IndexPage
