@@ -2,6 +2,8 @@ import React from 'react'
 import Navbar from '../components/Navbar'
 import Styles from "./index.module.css"
 import ListTrain from '../components/ListTrain'
+import ContactForm from '../components/ConctactForm'
+import Footer from '../components/footer'
 import Head from 'next/head'
 
 
@@ -26,10 +28,10 @@ function IndexPage() {
               </div>
             </div>
         </div>
-
-        <hr></hr>
         <h1 className={Styles.title}>Modelleisenbahnen</h1>
         <ListTrain />
+        <ContactForm /> 
+        <Footer />
     </>
   ) /** Test */
 }

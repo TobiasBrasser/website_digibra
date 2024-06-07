@@ -1,40 +1,83 @@
+
+.trainList {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  font-family: 'Ubuntu', sans-serif;
+}
+
+.trainCard {
+  width: 30%;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  padding: 15px;
+
+  transition: transform 0.3s ease-in-out;
+}
+
 .trainImage {
-    width: 100%;
-    height: auto;
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+.hidden {
+  display: none;
+}
+
+.expandedInfo {
+  display: block;
+}
+
+.label {
+  font-weight: bold;
+}
+
+.searchInput {
+  width: 100%;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding-top: 10px; 
+  padding-bottom: 10px;
+}
+
+.showMoreButton {
+  display: block;
+  width: 20%;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #f0e8e8;
+  color: black;
+  border: 1px solid #ccc;
+  border-radius: 2px;
+  cursor: pointer;
+  animation: dealCards 0.5s forwards;
+}
+
+@keyframes dealCards {
+  0% {
+    transform: translateY(20px);
+    opacity: 0;
   }
-  
-  .trainList {
-    display: flex;
-    flex-wrap: wrap; 
+  100% {
+    transform: translateY(0);
+    opacity: 1;
   }
-  
-  .trainCard {
-    width: calc(33.333% - 20px); 
-    margin: 10px;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    box-sizing: border-box;
-  }
-  
-  .label {
-    font-weight: bold;
-  }
-  
-  .searchInput {
-    display: block;
-    margin: 20px auto;
-    padding: 10px;
-    width: 80%;
-    font-size: 16px;
-  }
-  
-  .showMoreButton {
-    display: block;
-    margin: 20px auto;
-    padding: 10px 20px;
-    font-size: 16px;
-    cursor: pointer;
-  }
-  
+}
+
+.showMoreButton:hover {
+  background-color: #ccc;
+}
+
+.toggleButton{
+  display: block;
+  width: 100%;
+  padding: 10px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}

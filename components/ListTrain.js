@@ -57,7 +57,7 @@ const ListTrain = () => {
         {displayedTrains.map((train, index) => (
           <div key={index} className={Styles.trainCard}>
             <img className={Styles.trainImage} src={`/images/${train.Bild}`} alt={train.Bezeichnung} />
-            <h2>{train.Bezeichnung}</h2>
+            <h2 className={Styles.title}>{train.Bezeichnung}</h2>
             <div className={expandedInfo[index] ? Styles.expandedInfo : Styles.hidden}>
               <p><span className={Styles.label}>Typ:</span> {train.Typ}</p>
               <p><span className={Styles.label}>Hersteller:</span> {train.Hersteller}</p>
