@@ -1,29 +1,40 @@
-.train_list {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-    font-family: 'Ubuntu', sans-serif;
+.trainImage {
+    width: 100%;
+    height: auto;
   }
   
-  .train_card {
-    border: 1px solid #000;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
-    padding: 20px;
+  .trainList {
+    display: flex;
+    flex-wrap: wrap; 
+  }
+  
+  .trainCard {
+    width: calc(33.333% - 20px); 
     margin: 10px;
-    background-color: #fff;
-    flex: 1 1 calc(33.333% - 40px);
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     box-sizing: border-box;
   }
   
-  .trainImage {
-    width: 100%;
-    height: auto;
-    border-radius: 10px;
-  }
-
-
-  .label{
+  .label {
     font-weight: bold;
+  }
+  
+  .searchInput {
+    display: block;
+    margin: 20px auto;
+    padding: 10px;
+    width: 80%;
+    font-size: 16px;
+  }
+  
+  .showMoreButton {
+    display: block;
+    margin: 20px auto;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
   }
   
