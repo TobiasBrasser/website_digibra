@@ -9,11 +9,11 @@ function IndexPage() {
       <Head>
         <title>Home</title>
         <meta name="description" content="Beschreibung der Startseite" />
-        <link rel="icon" href="../public/logo.png" />
+        <link rel="icon" href=".logo.png" />
       </Head>
 
       <div className={Styles.gallery}>
-        <img className={Styles.image} src="/panda.jpg" />
+        <img className={Styles.image} src="./panda.jpg" />
         <h1 className={Styles.title}>Herzlich Willkommen zu Digibra</h1>
         <p className={Styles.paragraph}>Lorem laborum laborum dolor veniam aliqua irure tempor dolore. 
            Qui cillum qui duis cillum. Esse veniam sint minim ipsum eu cillum non irure 

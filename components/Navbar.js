@@ -26,7 +26,7 @@ function Navbar() {
             <div></div>
             <div></div>
           </div>
-          <img className={Styles.logo} src="/logo.png" alt="Logo" />
+          <img className={Styles.logo} src="./logo.png" alt="Logo" />
           <h1 className={Styles.digibra}>digibra</h1>
         </div>
         
@@ -36,10 +36,10 @@ function Navbar() {
               <Link className={Styles.nav_ul_li_a} href="/">Home</Link>
             </li>
             <li className={Styles.nav_ul_li}>
-              <Link className={Styles.nav_ul_li_a} href="/modelleisenbahn">Modelleisenbahn</Link>
+              <Link className={Styles.nav_ul_li_a} href="./modelleisenbahn">Modelleisenbahn</Link>
             </li>
             <li className={Styles.nav_ul_li}>
-              <Link className={Styles.nav_ul_li_a} href="/hobbies">Hobbies</Link>
+              <Link className={Styles.nav_ul_li_a} href="./hobbies">Hobbies</Link>
             </li>
           </ul>
         </nav>
