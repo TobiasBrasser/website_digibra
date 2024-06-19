@@ -31,6 +31,7 @@ const ContactForm = () => {
         });
       })
       .catch(error => {
+        console.error('Error sending email:', error);
         setStatus('Error sending email.');
       });
   };
